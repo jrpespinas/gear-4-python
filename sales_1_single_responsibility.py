@@ -5,15 +5,17 @@ Develop a Sales application using the SOLID principles.
 [ ] O - Open/Closed Principle
 [ ] L - Liskov Substitution Principle
 [ ] I - Interface Segragation Principle
-[ ] D - Dependency Inversion Principle 
+[ ] D - Dependency Inversion Principle
 
-Single Responsibility Principle suggest that every class, module, or function should have one purpose.
+Single Responsibility Principle suggest that every class, module,
+    or function should have one purpose.
 
 "Evey class should have only one reason to change."
 
 Changes:
-1. Remove the pay() method from the Order class 
-2. Implement PaymentProcessor class to separate the functionality from the Order class
+1. Remove the pay() method from the Order class
+2. Implement PaymentProcessor class to separate
+    the functionality from the Order class
 3. Define individual payment methods for both debit and credit payment
 
 """
