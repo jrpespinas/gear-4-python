@@ -1,3 +1,17 @@
+"""
+Develop a Sales application using the SOLID principles.
+
+[ ] S - Single Responsibility Principle
+[ ] O - Open/Closed Principle
+[ ] L - Liskov Substitution Principle
+[ ] I - Interface Segragation Principle
+[ ] D - Dependency Inversion Principle 
+
+This file is the base application.
+We will refactor this code to adhere to the SOLID principles 
+"""
+
+
 class Order:
     items = []
     quantities = []
@@ -27,6 +41,7 @@ class Order:
         else:
             raise Exception(f"Unknown payment type: {payment_type}")
 
+
 def main() -> None:
     order = Order()
     order.add_item("Macbook Pro 14 M2", 1, 2733)
@@ -39,4 +54,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-
