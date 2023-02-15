@@ -5,10 +5,10 @@ Develop a Sales application using the SOLID principles.
 [ ] O - Open/Closed Principle
 [ ] L - Liskov Substitution Principle
 [ ] I - Interface Segragation Principle
-[ ] D - Dependency Inversion Principle 
+[ ] D - Dependency Inversion Principle
 
 This file is the base application.
-We will refactor this code to adhere to the SOLID principles 
+We will refactor this code to adhere to the SOLID principles
 """
 
 
