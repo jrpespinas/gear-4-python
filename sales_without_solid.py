@@ -41,6 +41,17 @@ class Order:
         else:
             raise Exception(f"Unknown payment type: {payment_type}")
 
+    def print_receipt(self):
+        if self.status == "paid":
+            total = 0
+            for i in range(len(self.prices)):
+                price = self.quantities[i] * self.prices[i]
+                print(f"{self.quantities[i]}x {self.items[i]} = {price}")
+                total += price
+            print(f"Total = {total}")
+        else:
+            raise Exception("You have not paid for your order(s)")
+
 
 def main() -> None:
     order = Order()
@@ -48,8 +59,8 @@ def main() -> None:
     order.add_item("iPhone 14 pro", 1, 1556)
     order.add_item("Airpods Pro Gen 2", 1, 271)
 
-    print(order.total_price())
     order.pay("debit", "7809221")
+    order.print_receipt()
 
 
 if __name__ == "__main__":
