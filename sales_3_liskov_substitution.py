@@ -7,9 +7,8 @@ Develop a Sales application using the SOLID principles.
 [ ] I - Interface Segragation Principle
 [ ] D - Dependency Inversion Principle
 
-Liskov Substitution suggests when a class inherits from another class,
-the program shouldn't break and you shouldn't need to hack
-anything to use the subclass.
+Liskov Substitution posits the ability of a subclass to perform actions
+of the super class without knowing the type of subclass.
 
 For example, if we have a new payment function named PayPal that uses
 email instead of security code, a violation of this principle occurs
