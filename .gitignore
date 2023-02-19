@@ -111,6 +111,7 @@ env.bak/
 venv.bak/
 solid*
 cohesion-coupling*
+gear-4-python*
 
 # Spyder project settings
 .spyderproject
