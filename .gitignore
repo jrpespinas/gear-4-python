@@ -110,6 +110,7 @@ ENV/
 env.bak/
 venv.bak/
 solid*
+cohesion-coupling*
 
 # Spyder project settings
 .spyderproject
