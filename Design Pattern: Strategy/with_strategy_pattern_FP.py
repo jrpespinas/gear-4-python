@@ -1,5 +1,5 @@
 import uuid
-from typing import List
+from typing import List, Callable
 from abc import ABC, abstractmethod
 
 
@@ -28,7 +28,10 @@ class Group:
     def add_members(self, name: str, age: int):
         self.group.append(Member(name=name, age=age))
 
-    def list_members(self, sorting_strategy_function):
+    def list_members(
+        self,
+        sorting_strategy_function: Callable[[List[Member]], List[Member]],
+    ):
         group = sorting_strategy_function(self.group)
         for i in group:
             print(vars(i))
