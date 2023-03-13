@@ -47,4 +47,8 @@ def is_palindrome_3(s: str) -> bool:
 
 
 def is_alnum(s: str) -> bool:
-    return "a" <= s.lower() <= "z" or "0" <= s.lower() <= "9"
+    return (
+        ord("A") <= ord(s) <= ord("Z")
+        or ord("a") <= ord(s) <= ord("z")
+        or ord("0") <= ord(s) <= ord("9")
+    )
