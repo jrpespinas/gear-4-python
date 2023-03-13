@@ -1,12 +1,10 @@
-def isPalindrome(s: str) -> bool:
+def is_palindrome(s: str) -> bool:
     """check if the given string is a palindrome
 
-    >>> isPalindrome("A man, a plan, a canal: Panama")
+    >>> is_palindrome("A man, a plan, a canal: Panama")
     True
     """
-    s = s.replace(" ", "")
-    s = s.lower()
-    s = "".join(char for char in s if char.isalpha())
+    s = "".join(char.lower() for char in s if char.isalnum())
     for i in range(len(s) // 2):
         ptr1, ptr2 = s[i], s[len(s) - 1 - i]
         if ptr1 != ptr2:
@@ -17,10 +15,8 @@ def isPalindrome(s: str) -> bool:
 def is_palindrome_2(s: str) -> bool:
     """check if the given string is a palindrome
 
-    >>> isPalindrome("A man, a plan, a canal: Panama")
+    >>> is_palindrome_2("A man, a plan, a canal: Panama")
     True
     """
-    s = s.replace(" ", "")
-    s = s.lower()
-    s = "".join(char for char in s if char.isalpha())
+    s = "".join(char.lower() for char in s if char.isalnum())
     return s == s[::-1]
